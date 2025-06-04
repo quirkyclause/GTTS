@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoken English Practice with Google STT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spoken English Practice</h1>
+        <p class="message info">Click "Start Recording" to begin speaking. Click "Stop Recording" to get your transcription and feedback.</p>
+
+        <div class="controls">
+            <button id="startButton">Start Recording</button>
+            <button id="stopButton" disabled>Stop Recording</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Your Transcription:</h2>
+            <div id="transcriptionOutput"></div>
+
+            <h2>Pronunciation Feedback:</h2>
+            <div id="feedbackOutput"></div>
+        </div>
+
+        <div id="statusMessage" class="message" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
